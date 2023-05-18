@@ -1,14 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-family: "spaceFont1",sans-serif;;
+}
 html{
     height: 100%;
     width: 100%;
-    overflow: scroll;
+
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    /* background-color: black; */
+}
+header #logo{
+    width: 15%;
+    height: 100%;
+}
+header #logo img{
+    width: 100%;
+    height: 100%;
+}
+header #titre{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+header #menu{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li{
+    padding-right: 40px;
+}
+nav ul a{
+    text-decoration:none;
 }
 body{
-    padding: 0;
-    margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("src/nightSky1Cut.jpg") ;
+    background-image: url("src/nightSky2.jpg") ;
     background-size: 100% 100% ;
     background-repeat: no-repeat;
 }
@@ -22,11 +67,15 @@ body{
 }
 footer{
     position: fixed;
-    height: 20%;
+    height: 25%;
     width: 100%;
     bottom: 0;
     left: 0;
     background-image: url("src/justMontains.png") ;
     background-size: 100% 100% ;
     background-repeat: no-repeat;
+}
+@font-face {
+    font-family: "SpaceFont1";
+    src: url("src/fonts/SpaceGame-ywxX2.ttf") format("truetype");
 }
