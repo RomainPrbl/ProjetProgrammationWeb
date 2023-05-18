@@ -1,0 +1,12 @@
+4 pages minimun dont 2 imposées
+-le site doit etre responsive avec des media queries 
+
+- un formulaire !! interactif !!
+- un tableau 
+
+1) Page d'acceui:
+    - menu 
+    - un bas de page avec lien "a propos"
+    !! le menu et le footer sur tte les pages !!
+2) page a propos/contact  :
+    -membre + travail realisé par chacun 
