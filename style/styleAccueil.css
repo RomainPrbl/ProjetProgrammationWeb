@@ -20,8 +20,8 @@ header #logo{
     height: 100%;
 }
 header #logo img{
-    width: 100%;
-    height: 100%;
+    width: 130px;
+    height: 100px;
 }
 header #titre{
     display: flex;
@@ -63,7 +63,30 @@ body{
     height: 90%;
 
 }
+#mainContainer p {
+    color : black;
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: large;
+    margin: 50px;
+    line-height: 2;
+}
+#formInscription form{
+    /* background-color: aqua; */
+    margin: 50px;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+form input,label{
+    color : black;
+    font-family:'Times New Roman', Times, sans-serif;
+    font-size: large;
+}
 .box{
+    
     background-color:aliceblue;
     width: 70%;
     min-height: 60%;

@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: aliceblue;
-    font-family: "spaceFont1",sans-serif;;
+
 }
 html{
     height: 100%;
@@ -16,6 +15,8 @@ header{
     height: 10%;
     overflow: hidden;
     /* background-color: black; */
+    color: aliceblue;
+    font-family: "spaceFont1",sans-serif;;
 }
 header #logo{
     width: 15%;
@@ -32,6 +33,8 @@ header #titre{
     width: 35%;
 }
 header #menu{
+    color: aliceblue;
+    font-family: "spaceFont1",sans-serif;;
     display: flex;
     align-items: center;
     width: 50%;
@@ -49,55 +52,63 @@ nav ul li{
 }
 nav ul a{
     text-decoration:none;
+    color: aliceblue;
+    font-family: "spaceFont1",sans-serif;
+    transition: transform 0.5s ease-in-out;
+}
+nav ul a:hover{
+    color: rgb(28, 74, 102);
 }
 body{
     height: 100%;
     width: 100%;
     background-image: url("src/nightSky2.jpg") ;
     background-size: 100% 100% ;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
+/*------------------------------------------------*/
 #mainContainer{
+    margin: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 90%;
-
-}
-.box{
-    background-color:aliceblue;
     width: 80%;
-    min-height: 20%;
-    max-width: 1000px;
-    margin-top: 25px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    background-color: rgb(16, 16, 16);
 }
-.albumSlogan{}
-#subcontainer{
-    background-color: black;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+#mainContainer th,td{
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
-.imageDesUser{
-    border-radius: 10px;
-    margin: 15px;
-    max-width: 300px;
-    max-height: 300px;
-    min-height: 200px;
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 150%;
+}
+  
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+table tr{
+    height:80px;
+}
 
+table th {
+    background-color: rgb(28, 74, 102);
 }
-#mainContainer p,label,input {
-    color : black;
-    font-family: "Roboto Slab",Helvetica,Arial,sans-serif;
+
+table tbody tr:hover {
+    background-color: rgb(28, 74, 102);
+    color: black;
 }
+
+/*-----------------------------------------------*/
+
 footer{
+    color: aliceblue;
+    font-family: "spaceFont1",sans-serif;;
     position: fixed;
     height: 25%;
     width: 100%;

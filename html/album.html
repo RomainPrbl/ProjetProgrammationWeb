@@ -7,6 +7,7 @@
     <title>Albums</title>
     <link rel="shortcut icon" href="../style/src/solar-system.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/styleAlbum.css">
+    <script src="../script/scriptAlbum.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="album.html">Album</a></li>
                     <li><a href="aPropos.html">À propos</a></li>
-                    <li><a href="#">\_(ツ)_/</a></li>
+                    <li><a href="calendrier.html">Calendrier</a></li>
                   </ul>
             </nav>
         </div>
@@ -27,6 +28,16 @@
     <div id="mainContainer">
         <div class="box">
             <p class="albumSlogan"> Partagez vos plus beau clichés du ciel !</p>
+            <form id="formulaireAlbum">
+                <label for="image">Ajoutez une image : </label>
+                <input type="file" id="image" name="image">
+            
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        <div id="subcontainer">
+            <img class="imageDesUser" src="../style/src/imageAlbum1.jpg" alt="image de test" >
+            <img class="imageDesUser" src="../style/src/imageAlbum2.jpg" alt="image de test" > 
         </div>
     </div>
 
