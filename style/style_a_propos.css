@@ -50,12 +50,24 @@ nav ul li{
 nav ul a{
     text-decoration:none;
 }
+.line{
+    width: 0px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+}
+li:hover > .line{
+    width: 100%;
+}
 body{
+    background-image: url("src/nightSky2.jpg") ;
     height: 100%;
     width: 100%;
-    background-image: url("src/nightSky2.jpg") ;
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center; /* Centre la position de l'image */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */;
 }
 .overlay {
     position: fixed;

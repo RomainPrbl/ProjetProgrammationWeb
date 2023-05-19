@@ -48,14 +48,27 @@ nav ul li{
     padding-right: 40px;
 }
 nav ul a{
-    text-decoration:none;
+    text-decoration:none;  
+}
+
+.line{
+    width: 0px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+}
+li:hover > .line{
+    width: 100%;
 }
 body{
+    background-image: url("src/nightSky2.jpg") ;
     height: 100%;
     width: 100%;
-    background-image: url("src/nightSky2.jpg") ;
-    background-size: 100% 100% ;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center; /* Centre la position de l'image */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
 }
 #mainContainer{
     display: flex;
@@ -66,7 +79,7 @@ body{
 
 }
 .box{
-    background-color:aliceblue;
+    background-color:rgb(21, 21, 21);
     width: 80%;
     min-height: 20%;
     max-width: 1000px;
@@ -96,7 +109,7 @@ body{
     transform: scale(1.1);
 }
 #mainContainer p{
-    color : black;
+    color : aliceblue;
     font-size: 40px;
 }
 #mainContainer label,input {
@@ -109,16 +122,25 @@ form{
     
 }
 input{
-    border: solid 2px black;
+    border: solid 2px aliceblue;
     border-radius: 10px;
-    background: rgb(24,40,121);
+    background: rgb(46, 21, 123);
     padding: 10px;
     margin-right: 20px;
     transition: all 0.05s ease-in-out;
 }
+input[type="file"]::file-selector-button {
+    border: solid 2px aliceblue;
+    border-radius: 10px;
+    background: rgb(46, 21, 123);
+    padding: 10px;
+    margin-right: 20px;
+    color : aliceblue
+}
 input[type=submit]:active{
     transform: scale(1.2);
 }
+
 footer{
     position: fixed;
     height: 25%;

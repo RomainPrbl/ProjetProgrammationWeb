@@ -16,10 +16,10 @@
         <div id="menu">
             <nav>
                 <ul>
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="album.html">Album</a></li> 
-                    <li><a href="aPropos.html">À propos</a></li>
-                    <li><a href="calendrier.html">Calendrier</a></li>
+                    <li><a href="accueil.html">Accueil</a><div class="line"></div></li>
+                    <li><a href="album.html">Album</a><div class="line"></div></li>
+                    <li><a href="aPropos.html">À propos</a><div class="line"></div></li>
+                    <li><a href="calendrier.html">Calendrier</a><div class="line"></div></li>
                   </ul>
             </nav>
         </div>
@@ -30,20 +30,24 @@
 
         <div class="box">
             <p id="slogan">L'Association Constellation Bordelaise vous fait découvrir le ciel près de chez vous.</p>
+            <div id="illustrationTelescope"></div>
             <div id="formInscription">
-                <form id="formulaireAccueil">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
-                  
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-                  
-                    <input type="submit" value="Envoyer">
-                </form>
+                
                   
             </div>
         </div>
-        <div class="box"></div>
+        <div class="box">
+            <p>Inscrivez vous à la prochaine journée d'observation !</p>
+            <form id="formulaireAccueil">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+              
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+              
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
         <div class="box"></div>
 
     </div>

@@ -48,12 +48,24 @@ nav ul li{
 nav ul a{
     text-decoration:none;
 }
+.line{
+    width: 0px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+}
+li:hover > .line{
+    width: 100%;
+}
 body{
+    background-image: url("src/nightSky2.jpg") ;
     height: 100%;
     width: 100%;
-    background-image: url("src/nightSky2.jpg") ;
-    background-size: 100% 100% ;
-    background-repeat: repeat;
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center; /* Centre la position de l'image */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */;
 }
 #mainContainer{
     display: flex;
@@ -65,38 +77,47 @@ body{
 }
 #mainContainer p {
     font-family:'Times New Roman', Times, sans-serif;
-    font-size: large;
+    font-size: 30px;
     margin: 50px;
-    line-height: 2;
+    line-height: 1.5;
+    text-align: center;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-#formInscription form{
-    /* background-color: aqua; */
-    width: 60%;
-}
+
 form input,label{
     color : black;
     font-family:'Times New Roman', Times, sans-serif;
     font-size: large;
 }
+form input{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+#illustrationTelescope{
+    width: 30%;
+    height: 40%;
+    background-image: url("src/illustrationTelescope.jpg");
+    background-size: 100% 100% ;
+
+}
 .box{
     /* background-image: url("../style/src/J.L.-DAUVERGNECiel-et-Espace-850-00030-07high_001_autorisée-501x600.jpg");
     background-size: 100% 100% ; */
-    background-color: black;
+    background-color: rgba(17, 17, 17, 0.7);
     width: 70%;
     min-height: 60%;
     max-width: 1000px;
     margin-top: 25px;
     border-radius: 25px;
+    
+}
+.box:hover{
+    border: solid 1px aliceblue;
 }
 .box p,label,input{
     color : aliceblue;
-
+    display: block;
 }
 
 footer{
