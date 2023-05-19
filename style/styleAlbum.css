@@ -77,7 +77,6 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.albumSlogan{}
 #subcontainer{
     width: 90%;
     display: flex;
@@ -90,11 +89,35 @@ body{
     max-width: 300px;
     max-height: 300px;
     min-height: 200px;
+    transition: all 0.1s linear;
 
 }
-#mainContainer p,label,input {
+.imageDesUser:hover{
+    transform: scale(1.1);
+}
+#mainContainer p{
     color : black;
+    font-size: 40px;
+}
+#mainContainer label,input {
+    color : aliceblue;
     font-family: "Roboto Slab",Helvetica,Arial,sans-serif;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    
+}
+input{
+    border: solid 2px black;
+    border-radius: 10px;
+    background: rgb(24,40,121);
+    padding: 10px;
+    margin-right: 20px;
+    transition: all 0.05s ease-in-out;
+}
+input[type=submit]:active{
+    transform: scale(1.2);
 }
 footer{
     position: fixed;
