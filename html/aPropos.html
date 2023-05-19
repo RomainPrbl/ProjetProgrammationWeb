@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,13 @@
     <title>A propos</title>
     <link rel="shortcut icon" href="../style/src/solar-system.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/style_a_propos.css">
+    <script>
+        function afficherMessage() {
+            alert("Votre message a bien été envoyé");
+        }
+    </script>
 </head>
+
 <body>
     <header>
         <div id="logo"><img src="../style/src/logoBgRmv.png" alt="Logo"></div>
@@ -19,10 +26,53 @@
                     <li><a href="album.html">Album</a></li>
                     <li><a href="aPropos.html">À propos</a></li>
                     <li><a href="calendrier.html">Calendrier</a></li>
-                  </ul>
+                </ul>
             </nav>
         </div>
     </header>
-    <footer></footer>
+    <br>
+
+    <div id="mainContainer">
+        <div id="box1">
+            <h1>Qui sommes nous ?</h1>
+            <p>Constellation Bordelaise est une association à but non lucratif qui a pour but de faire découvrir le ciel
+                et l'astronomie aux habitants de Bordeaux.</p>
+            <p>Notre association est composée de 2 membres :</p>
+            <ul>
+                <li>Président : Romain PRABEL</li>
+                <li>Secrétaire général : Raphaël COMPAGNON</li>
+            </ul>
+        </div>
+        <br>
+        <div id="box2">
+            <h1>Courte présentation du travail</h1>
+            <p>Notre site web se partage en 4 pages, donc nous avons réalisés 2 pages chacun.
+                <br> Romain a fait la page d'accueil et la page de l'album.
+                <br> Raphaël a fait la page à propos et la page du calendrier.
+                <br>Les éléments <strong>obligatoire</strong> ont été inclus :
+                <br>on retrouve dans l'accueil un formulaire ainsi que dans le
+                a propos.
+                <br>Il y'a le tableau dans le calendrier des évènements.
+                <br>Une interaction avec la site avec le formulaire des images dans l'album.
+            </p>
+            <form id="formContact">
+                <h1>Contact</h1>
+                <p>Vous pouvez nous contacter par mail via le formulaire suivant :</p>
+                <div id="test">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Votre message :</label>
+                    <br> <textarea id="message" name="message" rows="4" cols="57" required></textarea>
+                </div>
+                <input id="button" type="submit" value="Envoyer" onclick="afficherMessage()">
+            </form>
+        </div>
+        <footer></footer>
 </body>
+
 </html>
