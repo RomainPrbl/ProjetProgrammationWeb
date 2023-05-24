@@ -96,7 +96,7 @@ form input{
 @media screen and (max-width:800px) {
     #mainContainer p{
         margin: 10px;
-        font-size:15px;
+        font-size:80%;
     }
     .box{
         min-height: 33%;
