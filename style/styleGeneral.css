@@ -77,6 +77,17 @@ footer{
     font-family: "SpaceFont1";
     src: url("src/fonts/SpaceGame-ywxX2.ttf") format("truetype");
 }
+
+/*-----------------body-------------------*/
+.boxVide{
+    background-color: rgba(17, 17, 17, 0);
+    width: 70%;
+    min-height: 40%;
+    max-width: 1000px;
+    margin-top: 25px;
+    border-radius: 25px;    
+}
+
 /*----------------Réseaux--------------------*/
 .logo{
     top: 50%;
@@ -143,6 +154,52 @@ footer{
     background-color: #2ea44f;
     outline-color: #2ea44f;
 }
+#buttonJaime{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#divTest{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:15px;
+}
+#nombre{
+    font-size: 1em;
+    margin-right: 15px;
+}
+#btn {
+    max-height: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  #btn:hover,#btn:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+  }
+
 @keyframes shake {
     10% {
         transform: rotate(15deg);

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/styleGeneral.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="../script/scriptAlbum.js" defer></script>
+    <script src="../script/coeurCpt.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
 
     <div id="mainContainer">
         <div class="box">
-            <p class="albumSlogan"> Partagez vos plus beau clichés du ciel !</p>
+            <p class="albumSlogan"> Partagez vos plus beaux clichés du ciel !</p>
             <form id="formulaireAlbum">
                 <input type="file" id="image" name="image"/>
             
@@ -41,10 +42,16 @@
             <img class="imageDesUser" src="../style/src/imageAlbum1.jpg" alt="image de test" >
             <img class="imageDesUser" src="../style/src/imageAlbum2.jpg" alt="image de test" > 
         </div>
+
+        <div class="boxVide"></div>
     </div>
 
 
     <footer>
+        <div id="buttonJaime">
+            <button id="btn">J ' a i m e</button> 
+            <div id="divTest"><p id="nombre">0</p> <p id="jaime">❤️</p></div>
+        </div>
         <div class="icons">
             <a href="#" class="icon icon--instagram">
                 <i class="ri-instagram-line"></i>

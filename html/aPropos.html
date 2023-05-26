@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/style_a_propos.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/styleGeneral.css">
+    <script src="../script/coeurCpt.js" defer></script>
     <script>
         function afficherMessage() {
             alert("Votre message a bien été envoyé");
@@ -74,7 +75,12 @@
                 <input id="button" type="submit" value="Envoyer" onclick="afficherMessage()">
             </form>
         </div>
-        <<footer>
+        <footer>
+            <div id="buttonJaime">
+                <button id="btn">J ' a i m e</button> 
+                <div id="divTest"><p id="nombre">0</p> <p id="jaime">❤️</p></div>
+            </div>
+            
             <div class="icons">
                 <a href="#" class="icon icon--instagram">
                     <i class="ri-instagram-line"></i>
