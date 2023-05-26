@@ -60,24 +60,32 @@ nav ul li {
 nav ul a {
     text-decoration: none;
 }
-.line{
+
+.line {
     width: 0px;
     height: 3px;
     background-color: aliceblue;
     margin-top: 2px;
     transition: width 0.3s ease-in-out;
 }
-li:hover > .line{
+
+li:hover>.line {
     width: 100%;
 }
-body{
-    background-image: url("src/nightSky2SansFusee.jpg") ;
+
+body {
+    background-image: url("src/nightSky2SansFusee.jpg");
     height: 100%;
     width: 100%;
-    background-attachment: fixed; /* Fixe l'image pendant le scroll */
-    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
-    background-position: center; /* Centre la position de l'image */
-    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */;
+    background-attachment: fixed;
+    /* Fixe l'image pendant le scroll */
+    background-size: cover;
+    /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center;
+    /* Centre la position de l'image */
+    background-repeat: no-repeat;
+    /* Empêche l'image de se répéter en fonction de la taille d'écran */
+    ;
 }
 
 .overlay {
@@ -121,7 +129,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.1);
-    height: 111%;
+    height: 150%;
 
 }
 
@@ -167,4 +175,26 @@ ul {
 #button:hover {
     background: rgba(15, 88, 214, 0.8);
     color: white;
+}
+
+#ContainerPicture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.pictureTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.picture {
+    margin: 30px;
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
 }
