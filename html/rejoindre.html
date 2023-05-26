@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albums</title>
+    <title>Nous rejoindre</title>
     <link rel="shortcut icon" href="../style/src/solar-system.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../style/styleAlbum.css">
-    <link rel="stylesheet" href="../style/styleGeneral.css">
+    <link rel="stylesheet" href="../style/styleRejoindre.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="../script/scriptAlbum.js" defer></script>
+    <link rel="stylesheet" href="../style/styleGeneral.css">
+    <script>
+        function Inscription() {
+            alert("Merci de votre inscription !");
+        }
+    </script>
 </head>
 
 <body>
@@ -41,25 +45,31 @@
         </div>
     </header>
 
-    <div id="mainContainer">
-        <div class="box">
-            <p class="albumSlogan"> Partagez vos plus beau clichés du ciel !</p>
-            <form id="formulaireAlbum">
-                <input type="file" id="image" name="image" />
-
-                <input type="submit" value="Ajouter">
-            </form>
-        </div>
-
-        <div id="subcontainer">
-            <img class="imageDesUser" src="../style/src/imageAlbum1.jpg" alt="image de test">
-            <img class="imageDesUser" src="../style/src/imageAlbum2.jpg" alt="image de test">
-        </div>
+    <div id="joinForm">
+        <form>
+            <h1>Rejoignez nous !</h1>
+            <p>Vous souhaitez nous rejoindre ? Remplissez ce formulaire et nous vous recontacterons.</p>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom">
+            <label for="fname">Prénom :</label>
+            <input type="text" id="fname" name="fname" placeholder="Votre prénom">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+            <div id="test">
+                <input type="submit" value="Envoyer" onclick="Inscription()">
+            </div>
+        </form>
+    </div>
+    <h1 id="loca">Nous retrouvez</h1>
+    <div id="box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3848710662614!2d-0.5546926239904173!3d44.81372337107083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527262e930981%3A0xf0bb43d82fd2d407!2sEfrei%20Bordeaux%20-%20Panth%C3%A9on-Assas%20Universit%C3%A9%20Paris%20II!5e0!3m2!1sfr!2sfr!4v1684923145952!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-
     <footer>
-        <div class="icons">
+        <div class=" icons">
             <a href="#" class="icon icon--instagram">
                 <i class="ri-instagram-line"></i>
             </a>
@@ -74,7 +84,6 @@
             </a>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -1,13 +1,19 @@
-body{
-    background-image: url("src/nightSky2.jpg") ;
+body {
+    background-image: url("src/nightSky2.jpg");
     height: 100%;
     width: 100%;
-    background-attachment: fixed; /* Fixe l'image pendant le scroll */
-    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
-    background-position: center; /* Centre la position de l'image */
-    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */;
+    background-attachment: fixed;
+    /* Fixe l'image pendant le scroll */
+    background-size: cover;
+    /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center;
+    /* Centre la position de l'image */
+    background-repeat: no-repeat;
+    /* Empêche l'image de se répéter en fonction de la taille d'écran */
+    ;
 }
-#mainContainer{
+
+#mainContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,34 +21,38 @@ body{
     height: 90%;
 
 }
+
 #mainContainer p {
-    font-family:'Times New Roman', Times, sans-serif;
+    font-family: Century Gothic, sans-serif;
     font-size: 30px;
     margin: 50px;
     line-height: 1.5;
     text-align: center;
 }
 
-form input,label{
-    color : black;
-    font-family:'Times New Roman', Times, sans-serif;
+form input,
+label {
+    color: black;
+    font-family: Century Gothic, sans-serif;
     font-size: large;
 }
-form input{
+
+form input {
     height: 30px;
     border-radius: 5px;
     border: none;
     margin-bottom: 10px;
 }
-#illustrationTelescope{
+
+#illustrationTelescope {
     width: 30%;
     height: 40%;
     background-image: url("src/illustrationTelescope.jpg");
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
 
 }
 
-.box{
+.box {
     /* background-image: url("../style/src/J.L.-DAUVERGNECiel-et-Espace-850-00030-07high_001_autorisée-501x600.jpg");
     background-size: 100% 100% ; */
     background-color: rgba(17, 17, 17, 0.7);
@@ -52,44 +62,53 @@ form input{
     margin-top: 25px;
     border-radius: 25px;
     display: flex;
-    
+
 }
-.box:hover{
+
+.box:hover {
     border: solid 1px aliceblue;
 }
-.box p,label,input{
-    color : aliceblue;
+
+.box p,
+label,
+input {
+    color: aliceblue;
     display: block;
 }
 
-#boxLeft{
+#boxLeft {
     width: 50%;
     height: 100%;
     margin: 0px;
 }
-#boxRight{
+
+#boxRight {
     margin: 0px;
     width: 50%;
     height: 100%;
 }
+
 .imageContainer {
     width: 100%;
     height: 100%;
-    background-size: 180% 100% ;
+    background-size: 180% 100%;
     background-position: center;
     transition: all 0.5s ease-in;
 
 }
-#boxLeftIllustration{
+
+#boxLeftIllustration {
     background-image: url("../style/src/box1Ilustration.jpg");
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-#observatoire{
+
+#observatoire {
     background-image: url("../style/src/obsvatoire.jpg");
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.imageContainer:hover{
-    background-size: 200% 120% ;
+
+.imageContainer:hover {
+    background-size: 200% 120%;
 }

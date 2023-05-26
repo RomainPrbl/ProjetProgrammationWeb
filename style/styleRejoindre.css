@@ -1,0 +1,108 @@
+ body {
+     background-image: url("src/nightSky2SansFusee.jpg");
+     height: 100%;
+     width: 100%;
+     background-attachment: fixed;
+     /* Fixe l'image pendant le scroll */
+     background-size: cover;
+     /* L'image prendra 100% de l'espace, quitte à la crop */
+     background-position: center;
+     /* Centre la position de l'image */
+     background-repeat: no-repeat;
+     /* Empêche l'image de se répéter en fonction de la taille d'écran */
+     ;
+ }
+
+ input {
+     width: 94%;
+     padding: 3%;
+ }
+
+
+
+ iframe {
+     width: 50%;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ #joinForm {
+     width: 400px;
+     padding: 30px;
+     margin: 0 auto;
+     border: 2px solid #ccc;
+     border-radius: 10px;
+     transition: border-color 0.3s ease;
+ }
+
+ #joinForm:hover {
+     border-color: #5b5a65;
+ }
+
+ #joinForm h1,
+ #joinForm p,
+ #joinForm label,
+ #joinForm input,
+ #joinForm textarea,
+ #joinForm input[type="submit"] {
+     text-align: center;
+ }
+
+ #joinForm input[type="text"],
+ #joinForm input[type="email"],
+ #joinForm textarea {
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+
+ #joinForm input[type="text"],
+ #joinForm input[type="email"] {
+     font-family: Century Gothic, sans-serif;
+     color: black;
+ }
+
+ #joinForm input[type="text"]:focus,
+ #joinForm input[type="email"]:focus,
+ #joinForm textarea:focus {
+     outline: none;
+     border-color: #ff0000;
+ }
+
+ #joinForm input[type="submit"] {
+     background: rgba(0, 0, 0, 0.5);
+     background-color: transparent;
+     height: 30px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     transition: all 0.3s ease-in-out;
+     cursor: pointer;
+     padding: 0;
+     ;
+ }
+
+ #joinForm input[type="submit"]:hover {
+     background: rgba(15, 88, 214, 0.8);
+ }
+
+ #test {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ #box {
+     margin: 10px;
+     height: 90%;
+     display: flex;
+     justify-content: center;
+ }
+
+ #loca {
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
